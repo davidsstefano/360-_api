@@ -1,0 +1,1 @@
+[23-Sep-2021 02:44:51 America/Fortaleza] PHP Warning:  session_destroy() expects exactly 0 parameters, 1 given in /home1/hg360m09/public_html/public/test.php on line 12
