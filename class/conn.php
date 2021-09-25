@@ -6,7 +6,7 @@ class ConnDb extends PDO
 	private $pdo;
 	
 	//Google - Europa
-    private $db_ip = "";
+    	private $db_ip = "";
 	private $db_name = "";
 	private $db_user = "";
 	private $db_pass = "";
