@@ -6,10 +6,10 @@ class ConnDb extends PDO
 	private $pdo;
 	
 	//Google - Europa
-    private $db_ip = "localhost";
-	private $db_name = "hg360m09_app_corrida";
-	private $db_user = "hg360m09_user";
-	private $db_pass = "06251991";
+    private $db_ip = "";
+	private $db_name = "";
+	private $db_user = "";
+	private $db_pass = "";
 		
 	//criando o metodo para conexao automatica ao chamar a classe
 	public function __construct()
