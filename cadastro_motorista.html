@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cadastro Passageiro</title>
+  <title>Cadastro Motorista</title>
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="assets/img/logos/360-degrees-svgrepo-com.svg" />
 
@@ -92,17 +92,14 @@
       margin-top: 20px;
       width: 100%;
     }
-
-    
   </style>
 </head>
 
 <body>
 
   <main>
-  <img id="img_logo" src="/img/logo_site_360.jpg">
     <div class="container">
-     <form id="form" class="form">
+      <form id="form" class="form">
         <h2>Cadastro</h2>
         <div class="form-control">
           <label for="text">Nome</label>
@@ -110,8 +107,23 @@
           <small>Error Message</small>
         </div>
         <div class="form-control">
-          <label for="text">Sobrenome</label>
+          <label for="text2">Sobrenome</label>
           <input type="text" id="sobrenome" placeholder="Digite seu sobrenome">
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="number">CNH</label>
+          <input type="number" id="cnh" placeholder="Digite o número de registro de sua CNH">
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Categoria</label>
+          <input type="text" id="cnh2" placeholder="Categoria da habilitação">
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Validade</label>
+          <input type="date" id="cnh3" placeholder="Validade da CNH">
           <small>Error Message</small>
         </div>
         <div class="form-control">
@@ -148,7 +160,7 @@
   <footer class="credit">Copyright &copy; Bite Treechnology 2021</footer>
   <script>
     const form = document.getElementById('form');
-    const username = document.getElementById('nome' + 'sobrenome');
+    const username = document.getElementById('text' + 'text2');
     const email = document.getElementById('email');
     const password = document.getElementById('password');
     const password2 = document.getElementById('password2');
@@ -219,7 +231,7 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      checkRequired([username, email, password, password2]);
+      checkRequired([name, email, password, password2]);
       checkLength(username, 3, 15);
       checkLength(password, 6, 25);
       checkEmail(email);
